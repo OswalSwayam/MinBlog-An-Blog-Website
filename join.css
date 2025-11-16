@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background: #f9f3e9; /* Optional background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container for all plans */
+.plans-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align top edges */
+    gap: 30px; /* Space between cards */
+    padding: 40px;
+    flex-wrap: wrap; /* Allows them to wrap on smaller screens */
+}
+
+/* Each plan card */
+.plan {
+    width: 350px; /* Bigger card width */
+    border-radius: 18px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 20px;
+    background-color: #fff;
+    color: #4a5b70;
+    max-width: 350px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plan:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.plan strong {
+    font-weight: 700;
+    color: #2a3957;
+    font-size: 1.2rem;
+}
+
+/* Inner content styling */
+.plan .inner {
+    align-items: center;
+    padding: 30px;
+    padding-top: 50px;
+    background-color: #ecf0ff;
+    border-radius: 14px;
+    position: relative;
+}
+
+/* Pricing badge */
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.8em 1em;
+    font-size: 1.6rem; /* Bigger price text */
+    font-weight: 700;
+    color: #2a3957;
+}
+
+.plan .pricing small {
+    color: #5a667a;
+    font-size: 0.85em;
+    margin-left: 0.3em;
+}
+
+/* Title of plan */
+.plan .title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2a3e58;
+}
+
+.plan .title + * {
+    margin-top: 1rem;
+}
+
+/* Info section */
+.plan .info + * {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Features list */
+.plan .features {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.05rem;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.plan .features li + * {
+    margin-top: 1rem;
+}
+
+/* Feature icons */
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features + * {
+    margin-top: 1.5rem;
+}
+
+/* Action button area */
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Main button */
+.plan .button {
+    background-color: #6558d3;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem; /* Bigger button text */
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.plan .button:hover, 
+.plan .button:focus {
+    background-color: #4133B7;
+}
